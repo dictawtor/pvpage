@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+    <!--    Site Description -->
+    <meta name="description" content="personal portfolio themplate">
+    <!--    Site  Keyword -->
+    <meta name="keywords" content="Personal,Bootstrap,Portfolio"/>
+    <!--    Site author  -->
+    <meta name="author" content="Toonalite Art Group" />
+
+    <meta name="copyright" content="Alright reserved &copy; copyright by Morteza azami" />
+    <!-- Icon -->
+    <link rel="icon" type="image/x-icon" href="assets/img/icons/favicon.ico">
+    <!-- Site Title -->
+    <title>مرتضی اعظمی</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Style -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="assets/css/bootstrap-icons.css">
+    <!-- Swiper slider -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!-- Swiper slider -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <!-- Custom style -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Custom RTL style -->
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <!--     color option -->
+    <!-- <link rel="stylesheet" href="assets/css/color/fc8210.css" id="option-color"> -->
+    <!-- dark color -->
+    <link rel="stylesheet" href="assets/css/color/dark.css">
+
+</head>
+<body data-bs-spy="scroll" data-bs-target="#main-menu" class="position-relative dark" tabindex="0" data-bs-offset="250">
+<!-- Preloader -->
+<!-- <div id="preloader">
+    <p data-text="اکـــو">اکـــو</p>
+</div> -->
+<!-- Header Section -->
+<header class="top-header py-2 mt-2">
+    <!--    Side Menu Button -->
+    <button type="button" class="btn side-menu-btn position-absolute">
+        <i class="bi bi-three-dots-vertical fs-30 "></i>
+    </button>
+    <nav class="container shadow-base bg-white radius-10 py-3 navbar navbar-expand-md">
+        <div class="row align-items-center px-2">
+            <div class="col-12 col-md-2 text-center text-md-end">
+                <!-- logo -->
+                <a href="index-light.html" class="fs-25  fw-bold logo me-2">
+                    مرتضی   اعظمی
+                </a>
+            </div>
+            <!--            mobile menu -->
+            <button type="button" class="btn fs-30 mobile-menu d-block d-md-none" data-bs-toggle="collapse" data-bs-target="#main-menu" aria-controls="main-menu" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list"></i>
+            </button>
+            <!--            main Menu -->
+            <div id="main-menu" class="radius-15 col-md-8 collapse navbar-collapse">
+                <ul class="nav list-inline d-flex justify-content-between align-items-center w-100 position-relative mb-0">
+                    <li>
+                        <a href="#hero" class="active d-block text-center nav-link" title="خانه">
+                            <i class="bi bi-house-fill fs-30 text-basic"></i>
+                            <span>خانه</span>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="#about" class="d-block text-center nav-link" title="درباره من">
+                            <i class="bi bi-person-fill fs-30 text-basic"></i>
+                            <span>درباره من</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services" class="d-block text-center nav-link" title="خدمات">
+                            <i class="bi bi-shield-fill-check fs-30 text-basic"></i>
+                            <span>خدمات</span>
+                        </a>
+                    </li>
+                    <!-- <!-- <li>
+                        <a href="#portfolio" class="d-block text-center nav-link" title="نمونه کار ها">
+                            <i class="bi bi-collection-fill fs-30 text-basic"></i>
+                            <span>نمونه کار ها</span>
+                        </a>
+                    </li> -->
+                    <!-- <li> -->
+                        <!-- <a href="#testimonial" class="d-block text-center nav-link" title="نظر ها">
+                            <i class="bi bi-chat-square-quote-fill fs-30 text-basic"></i>
+                            <span>نظر ها</span>
+                        </a> -->
+                    <!-- </li> -->
+                    <!-- <li> -->
+                        <!-- <a href="#blog" class="d-block text-center nav-link" title="بلاگ">
+                            <i class="bi bi-file-text-fill fs-30 text-basic"></i>
+                            <span>بلاگ</span>
+                        </a> -->
+                    <!-- </li> -->
+                    <!-- <li>
+                        <a href="#contact" class="d-block text-center nav-link" title="ارتباط با من">
+                            <i class="bi bi-headset fs-30 text-basic"></i>
+                            <span>ارتباط با من</span>
+                        </a>
+                    </li> --> 
+                </ul>
+            </div>
+            <!-- Dark And Light  -->
+            <div class="dark-icon col-md-2 d-flex justify-content-end align-items-center">
+                <div class="switch-dark">
+                    <i class="bi bi-moon-fill fs-24"></i>
+                    <i class="bi bi-brightness-low-fill fs-30"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+<!--    HERO SECTION-->
+<section id="hero" class="pb-5 pt-lg-5 position-relative animate__animated animate__fadeIn">
+    <div class="container">
+        <div class="row align-items-center">
+            <!--                 Left image  -->
+            <div class="col-12 col-md-6 col-lg-3 order-md-2 order-lg-0 ">
+                <div class="position-relative shadow-base hero-right-side">
+                    <img src="assets/img/hero/hero-2.jpg" alt="/" >
+                </div>
+            </div>
+            <!--                Hero Text Section   -->
+            <div class="col-12 col-md-12 col-lg-6 order-md-first order-lg-0 text-center my-5 my-lg-0">
+                <p class="text-capitalize fs-14 bg-light shadow-min d-inline-block text-center py-2 px-3 radius-5">
+                    بهترین ها از بهترین تصمیم حاصل می شود
+                </p>
+                <div class="hero-content">
+                    <h2 class="mt-3">سلام من مرتضی اعظمی هستم</h2>
+                    <h1 id="typed-content">
+                        <span>توسعه و طراحی وبسایت با react</span>
+                        <span>توسعه دهنده وبسایت.</span>
+                        <span>برنامه نویس  front-end</span>
+                    </h1>
+                    <span id="typed" class="fs-48 fw-bold"></span>
+                    <p> به وبسایت من خوش اومدین
+                        <br>
+                        توی این وبسایت میتونید بخشی از مهارت ها، خدمات و نمونه کارهای منو ببینید
+                    </p>
+                    <div class="cta mt-sm-4 mt-3 d-flex align-items-center flex-wrap gap-3 justify-content-center">
+                        <a href="javascript:void(0);" class="fs-18 ms-2 btn bg-basic px-4 py-3">
+                            دانلود رزومه
+                        </a>
+                        <!-- <a href="#video" class="btn bg-transparent d-flex align-items-center fs-18">
+                            <i class="bi-play bg-basic rounded-circle ms-2"></i>
+                            <span class="position-relative">تماشای ویدئو</span>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+            <!--                Right Image-->
+            <div class="  col-12 col-md-6 col-lg-3 d-none d-md-block">
+                <div class="position-relative shadow-base hero-left-side">
+                    <img src="assets/img/hero/hero-1.jpg" alt="/" class="w-100">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--    About Section   --> 
+<section id="about" class="py-64">
+    <div class="container">
+        <!--        Section Title-->
+        <h2 class="section-title fw-bold mb-5 text-capitalize">
+            درباه من
+        </h2>
+        <div class="row align-items-center">
+            <!--            Item 1-->
+            <div class="col-12 col-lg-6">
+                <div class="row">
+                    <div class="col-12 col-md-6 h-280 mb-4 animate__animated animate__slideInRight wow">
+                        <div class="about-box shadow-base bg-basic radius-15 px-2 py-1 h-100 overflow-hidden d-flex justify-content-center">
+                            <img src="assets/img/icons/web.png" alt="/">
+                        </div>
+                    </div>
+                    <!-- Item 2-->
+                    <div class="col-12 col-md-6 h-280 position-relative top-24 mb-4 animate__animated animate__fadeIn wow" data-wow-delay=".4s">
+                        <div class="about-box shadow-base bg-white radius-15 px-4 py-4 text-center h-100 ">
+                            <i class="bi-code-slash fs-52"></i>
+                            <h4 class="text-uppercase fw-bold mb-3">کد تمیز</h4>
+                            <p class="text-gray">
+                               طراحی های Front-end با اصول و استانداردهای تعیین شده. و همچنین کدها مرتب، تمیز و قابل فهم با کمترین و بهینه ترین استایل دهی کدنویسی می شوند
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Item 3-->
+                    <div class="col-12 col-md-6 h-280 mb-4 animate__animated animate__fadeIn wow" data-wow-delay=".2s">
+                        <div class="about-box shadow-base bg-white radius-15 px-4 py-4 text-center h-100 ">
+                            <i class="bi-window-desktop fs-52"></i>
+                            <h4 class="text-uppercase fw-bold mb-3">واکنش گرا</h4>
+                            <p class="text-gray">
+                                کدنویسی واکنش گرا یا ریسپانسیوسازی برای تمام deviceها از سایز 320px به بالا انجام می شود
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item 4-->
+                    <div class="col-12 col-md-6 h-280 position-relative top-24 mb-4 animate__animated animate__slideInRight wow" data-wow-duration="1s">
+                        <div class="about-box shadow-base bg-basic radius-15 px-2 py-1 h-100 overflow-hidden d-flex justify-content-center">
+                            <img src="assets/img/icons/mobile.png" alt="/">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--            Item 2-->
+            <div class="col-12 col-lg-6 mt-sm-4 mt-3 mt-lg-0">
+                <h3 class="fs-60 text-uppercase">
+                         مهارت های من
+                </h3>
+                <p class="text-gray">
+            
+                </p>
+                <div class="skill-bar position-relative overflow-hidden">
+                    <ul class="list-inline">
+                        <li class="overflow-hidden position-relative">
+                            <h5 class="skill-name text-uppercase">Html</h5>
+                            <span class="skill-chart" data-percent="95%"></span>
+                        </li>
+                        <li class="overflow-hidden position-relative">
+                            <h5 class="skill-name text-uppercase">CSS</h5>
+                            <span class="skill-chart" data-percent="80%"></span>
+                        </li>
+                        <li class="overflow-hidden position-relative">
+                            <h5 class="skill-name text-uppercase">javascript</h5>
+                            <span class="skill-chart" data-percent="75%"></span>
+                        </li>
+                        <li class="overflow-hidden position-relative">
+                            <h5 class="skill-name text-uppercase">react</h5>
+                            <span class="skill-chart" data-percent="60%"></span>
+                        </li>
+                        <li class="overflow-hidden position-relative">
+                            <h5 class="skill-name text-uppercase">typescript</h5>
+                            <span class="skill-chart" data-percent="73%"></span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Experience -->
+<section id="exp" class="py-64">
+    <div class="container">
+        <div class="row">
+            <!--            Experience box -->
+            <div class="col-12 col-lg-6 mb-4 animate__animated animate__slideInRight wow" data-wow-duration="2s">
+                <div class="p-4 bg-white shadow-base radius-15">
+                    <h3 class="box-title text-capitalize text-basic fs-18 mt-2">
+                        تجربه
+                    </h3>
+                    <ul class="list-inline mt-sm-4 mt-3">
+                        <li class="border-bottom">
+                            <div>
+                                <h4 class="fw-bold d-inline-block" >2 سال تجربه کار فریلنسری</h4>
+                                <span class="d-inline-block text-basic float-start"> 1401 -1399</span>
+                            </div>
+                            <p class="text-gray">
+                    از طریق پیج اینستاگرام پروژه های متعدد از شرکت هایی مثل مخابرات استان اصفهان، شرکت پدیده تجارت، شرکت PMDsoft و... دریافت و طراحی کردم 
+                            </p>
+                        </li>
+                        <li class="border-bottom mt-3">
+                            <div>
+                                <h4 class="fw-bold d-inline-block"> 1 سال تجربه همکاری با شرکت پدیده تجارت </h4>
+                                <span class="d-inline-block text-basic float-start"> 1401 - 1402</span>
+                            </div>
+                            <p class="text-gray">
+                                 در شرکت پدیده تجارت فرانت کار ارشد بودم و بعد از یکسال قرارداد کارمندی من به اتمام رسید و بصورت فریلنسری کار میکنم. 
+                            </p>
+                        </li>
+                        <!-- <li class="mt-3">
+                            <div>
+                                <h4 class="fw-bold d-inline-block">قالب ایجاد کنید</h4>
+                                <span class="d-inline-block text-basic float-start"> 1399</span>
+                            </div>
+                            <p class="text-gray">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و 
+                                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است 
+                            </p>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+            <!--            Education box-->
+            <div class="col-12 col-lg-6 mb-4 animate__animated animate__slideInLeft wow" data-wow-duration="2s">
+                <div class="p-4 bg-white shadow-base radius-15">
+                    <h3 class="box-title text-capitalize text-basic fs-18 mt-2">
+                        تحصیلات
+                    </h3>
+                    <ul class="list-inline mt-sm-4 mt-3">
+                        <li class="border-bottom">
+                            <div>
+                                <h4 class="fw-bold d-inline-block">یادگیری Front-End</h4>
+                                <span class="d-inline-block text-basic float-start"> 1398</span>
+                            </div>
+                            <p class="text-gray">
+                                از اواسط سال 1398 شروع به یادگیری و تخصصی فرانت-اند از طریق آموزش های آنلاین سایت هایی مثل کلیک سایت ، آموزشتک ، وی لرن ، 7لرن ، راکت و ... کردم
+                            </p>
+                        </li>
+                        <li class="border-bottom mt-3">
+                            <div>
+                                <h4 class="fw-bold d-inline-block">کارشناسی مهندسی نرم افزار</h4>
+                                <span class="d-inline-block text-basic float-start"> 1397</span>
+                            </div>
+                            <p class="text-gray">
+                                از سال ۱۳۹۷ تا ۱۴۰۱ دانشجوی مهندسی کامپیوتر دانشگاه پیام نور تبریز بودم و در نهایت با معدل ۱۵/۶ فارغ التحصیل شدم
+                        </li>
+                        <!-- <li class="mt-3">
+                            <div>
+                                <h4 class="fw-bold d-inline-block">یادگیری طراحی وب</h4>
+                                <span class="d-inline-block text-basic float-start">1399</span>
+                            </div>
+                            <p class="text-gray">
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم
+                                از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و
+                                متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است
+                            </p>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services Section -->
+<section id="services" class="py-64">
+    <div class="container">
+        <!--        Section Title-->
+        <h2 class="section-title fw-bold mb-5 text-capitalize">
+            خدمات
+        </h2>
+        <div class="row">
+            <!--            Left BOX-->
+            <div class="col-12 col-lg-8">
+                <div class="row">
+                    <!--                    item 1-->
+                    <div class="col-12 col-md-6 col-lg-6 mb-4 animate__animated animate__fadeInDown wow" data-wow-duration="1s" data-wow-delay=".2s">
+                        <div class="services-box shadow-base radius-15 py-4 bg-white">
+                            <div class="d-flex align-items-center gap-4">
+                                <i class="bi-code-slash fs-36 bg-basic rounded-circle d-flex justify-content-center align-items-center text-white"></i>
+                                <h3 class="d-inline-block fw-bold mb-0">کد تمیز</h3>
+                            </div>
+                            <p>
+                                طراحی های Front-end با اصول و استانداردهای تعیین شده. و همچنین کدها مرتب، تمیز و قابل فهم با کمترین و بهینه ترین استایل دهی کدنویسی می شوند
+                            </p>
+                        </div>
+                    </div>
+                    <!--                    item 2-->
+                    <div class="col-12 col-md-6 col-lg-6 mb-4 animate__animated animate__fadeInDown wow" data-wow-duration="1.5s" data-wow-delay=".4s">
+                        <div class="services-box shadow-base radius-15 py-4 bg-white">
+                            <div class="d-flex align-items-center gap-4">
+                                <i class="bi-window-desktop fs-36 bg-basic rounded-circle d-flex justify-content-center align-items-center text-white"></i>
+                                <h3 class="d-inline-block fw-bold mb-0">واکنش گرا</h3>
+                            </div>
+                            <p>
+                                کدنویسی واکنش گرا یا ریسپانسیوسازی برای تمام deviceها از سایز 320px به بالا انجام می شود
+                            </p>
+                        </div>
+                    </div>
+                    <!--                    item 3-->
+                    <div class="col-12 col-md-6 col-lg-6 mb-4 animate__animated animate__fadeInUp wow" data-wow-duration="1s" data-wow-delay=".2s">
+                        <div class="services-box shadow-base radius-15 py-4 bg-white ">
+                            <div class="d-flex align-items-center gap-4">
+                                <i class="bi-git fs-36 bg-basic rounded-circle d-flex justify-content-center align-items-center text-white"></i>
+                                <h3 class="d-inline-block fw-bold mb-0">پشتیبانی</h3>
+                            </div>
+                            <p>
+                                به مدت 2 ماه بعد از اتمام قرارداد و یا تسویه حساب، راهنمایی، باگها و مشکلاتی که ممکن است سهوا بوجود آمده باشند رایگان و همچنین تغییرات جزئی در فرانت رایگان و یا با کمترین هزینه انجام می شود.
+                            </p>
+                        </div>
+                    </div>
+                    <!--                    item 4-->
+                    <div class="col-12 col-md-6 col-lg-6 mb-4 animate__animated animate__fadeInUp wow" data-wow-duration="1.5s" data-wow-delay=".4s">
+                        <div class="services-box shadow-base radius-15 py-4 bg-white ">
+                            <div class="d-flex align-items-center gap-4">
+                                <i class="bi-graph-up-arrow fs-36 bg-basic rounded-circle d-flex justify-content-center align-items-center text-white"></i>
+                                <h3 class="d-inline-block fw-bold mb-0">ابزار مناسب </h3>
+                            </div>
+                            <p>
+                                استفاده از بهترین و به روزترین فریمورک ها و کتابخانه ها مثل بوت استرپ، ری اکت، تایپ اسکریپت، جی کوئری و ... برای طراحی بهتر و سریعتر
+                                
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--            Right BOX-->
+            <div class="col-12 col-lg-4 mb-4 animate__animated animate__fadeIn wow" data-wow-duration="1.5s" data-wow-delay="1s">
+                <div class="shadow-base radius-15 p-4 text-center h-100 bg-white">
+                    <div class="image-box rounded-circle overflow-hidden mx-auto d-flex justify-content-center align-items-center" style="width:120px;height:120px;">
+                        <img src="assets/img/user/user1.png" alt="/" class="w-100 h-100" style="object-fit:cover;">
+                    </div>
+                    <h6 class="fs-20 fw-bold text-capitalize m-4">
+                        من مرتضی اعظمی هستم
+                    </h6>
+                    <p class="mb-3">
+                        متولد 1377 ساکن تبریز من همیشه به تکنولوژی علاقه داشتم و در سال 99 در مسیر علاقم قدم برداشتم. کد نویسی استاندارد با یک متخصص front-end مسؤلیت پذیر نیاز تمام کار فرمایان وشرکت هاست پس خوشحال میشم با شماهمکاری داشته باشم
+                    </p>
+                    <div class="social-icons mt-4">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item ms-3">
+                                <a href="javascript:void(0);" class="text-gray"><i class="bi-instagram fs-24"></i></a>
+                            </li>
+                            <li class="list-inline-item ms-3">
+                                <a href="javascript:void(0);" class="text-gray"><i class="bi-pinterest fs-24"></i></a>
+                            </li>
+                            <li class="list-inline-item ms-3">
+                                <a href="javascript:void(0);" class="text-gray"><i class="bi-dribbble fs-24"></i></a>
+                            </li>
+                            <li class="list-inline-item ms-3">
+                                <a href="javascript:void(0);" class="text-gray"><i class="bi-linkedin fs-24"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  -->
+<!-- Footer -->
+<footer class="py-5">
+    <div class="container">
+        <div class="row">
+            <p class="text-center mb-0 fs-16 w-75 mx-auto">
+               حق نشر محفوظ است &copy;  <a href="#">
+            </p>
+        </div>
+    </div>
+</footer>
+<!--SIDE MENU -->
+<div id="side-menu" class="bg-white">
+    <i class="bi bi-x close-btn fs-36"></i>
+    <div class="side-content">
+        <h1 class="text-center fw-bold fs-40 mb-3">
+            مرتضی اعظمی
+        </h1>
+        <p style="color:#81aac5 !important;">متولد 1377 ساکن تبریز من همیشه به تکنولوژی علاقه داشتم و در سال 99 در مسیر علاقم قدم برداشتم. کد نویسی استاندارد با یک متخصص front-end مسؤلیت پذیر نیاز تمام کار فرمایان وشرکت هاست پس خوشحال میشم با شماهمکاری داشته باشم
+        </p>
+        <div class="location-info mt-4 mb-2">
+            <h4 class="text-capitalize text-basic fw-bold fs-20">
+                اطلاعات تماس
+            </h4>
+            <ul class="list-inline">
+                <li class="d-flex align-items-center gap-2 mb-2">
+                    <i class="bi bi-envelope-fill fs-24 text-basic"></i>
+                    <a href="mailto:example@example.com">dictawtor@gmail.com</a>
+                </li>
+                <li class="d-flex align-items-center gap-2 mb-2">
+                    <i class="bi bi-phone-fill fs-24 text-basic"></i>
+                    <a href="tel:+123456789">+989011546532</a>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="fs-18 ms-2 btn button bg-basic px-4 py-3 w-100 my-4"> دنبال کردن من</button>
+        <div class="social mt-4">
+            <h4 class="text-capitalize text-basic fw-bold fs-20 mb-4">
+                شبکه های اجتماعی
+            </h4>
+            <ul class="d-flex align-items-center gap-4 list-inline mb-0 justify-content-around">
+                <li>
+                    <a href="https://www.instagram.com/itzm0ri" class="p-3">
+                        <i class="bi-instagram fs-24"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="p-3">
+                        <i class="bi-dribbble fs-24"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="p-3">
+                        <i class="bi-pinterest fs-24"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="p-3">
+                        <i class="bi-linkedin fs-24"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Return to top-->
+<div class="progress-wrap">
+    <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+        <rect x="1.5" y="1" rx="10" ry="10" width="98" height="98"/>
+    </svg>
+</div>
+<!-- Start Options -->
+<!-- <div id="color-switcher" class="color-switcher">
+    <div class="text-center color-pallet hide">
+        <div class="pallet-button hide">
+            <a href="javascript:void(0);" class="cp-toggle"><i class="bi bi-gear-wide"></i></a>
+        </div>
+        <h6 class="text-center fs-18">انتخاب رنگ مورد نظر</h6>
+        <ul class="pattern">
+            <li>
+                <a class="color1" href="#"></a>
+            </li>
+            <li>
+                <a class="color2" href="#"></a>
+            </li>
+            <li>
+                <a class="color3" href="#"></a>
+            </li>
+            <li>
+                <a class="color4" href="#"></a>
+            </li>
+            <li>
+                <a class="color5" href="#"></a>
+            </li>
+            <li>
+                <a class="color6" href="#"></a>
+            </li>
+        </ul>
+        <h6 class="my-3 color-scheme-title fs-18">تاریک و روشن</h6>
+        <ul class="color-scheme list-inline">
+            <li class="list-inline-item">
+                <a href="javascript:void(0)" class="light-scheme fs-18"><i class="bi bi-brightness-high"></i></a>
+            </li>
+            <li class="list-inline-item">
+                <a href="javascript:void(0)" class="dark-scheme fs-18"><i class="bi bi-moon-stars"></i></a>
+            </li>
+        </ul>
+    </div>
+</div> -->
+<!-- End Options -->
+
+
+
+<!-- Scripts -->
+<!-- Jquery -->
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<!-- Swiper -->
+<script src="assets/js/swiper-bundle.min.js"></script>
+<!-- bootstrap js -->
+<script src="assets/js/bootstrap.min.js"></script>
+<!-- bootstrap js -->
+<script src="assets/js/typed.min.js"></script>
+<!-- wow js -->
+<script src="assets/js/wow.js"></script>
+<!--<script src="assets/js/smooth-scrollbar.js"></script>-->
+<!-- main js -->
+<script src="assets/js/main.js"></script>
+</body>
+</html>

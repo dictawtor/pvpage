@@ -1,0 +1,111 @@
+.bg-basic{
+    background-color: #fc8210;
+}
+.text-basic,
+.dark .text-basic{
+    color: #fc8210;
+}
+.effect-bg:hover{
+    background-color: rgba(252, 130, 16, 0.15) !important;
+}
+i:hover,
+.dark i:hover{
+    color: #fc8210;
+}
+/*.dark #main-menu i{*/
+/*    color: ;*/
+/*}*/
+.section-title{
+    color: #fc8210;
+}
+.section-title:before{
+    background-color: #fc8210;
+}
+#main-menu ul li a.active{
+    background-color: #fc8210;
+}
+.cta a:nth-child(2) i {
+    color: #fc8210;
+    border: 3px solid #fc8210;
+    border-right-color: inherit;
+    border-bottom-color: inherit;
+}
+.cta a:nth-child(2) span:before{
+    background-color: #fc8210;
+}
+.cta a:nth-child(1):hover{
+    border: 1px solid #fc8210;
+    color: #fc8210;
+}
+.skill-bar .skill-chart {
+    background-color: #fc8210;
+}
+.swiper-pagination-bullet{
+    background-color: #fc8210 !important;
+}
+.page-header .title-section::after {
+    border-bottom: 3px solid #fc8210;
+}
+.search-boxes button.btn {
+    background-color: #fc8210 !important;
+}
+#video .video-txt{
+    color: #fc8210;
+}
+.blog-single .blog-search-box input {
+    color: #fc8210;
+}
+.blog-single .blog-search-box button.btn {
+    color: #fc8210;
+}
+.blog-single .blog-tag-cloud a{
+    background-color: #ffc8c7;
+}
+.page-item.active .page-link {
+    color: #fff;
+    background-color: #fc8210;
+}
+.page-link:hover, .page-link:focus {
+    color: #ffffff;
+    background-color: #fc8210;
+}
+input:focus-visible,textarea:focus-visible{
+    outline: 1px solid #fc8210;
+}
+input[type="submit"]{
+    background-color: #fc8210;
+    color: #ffffff;
+    border: 1px solid #fc8210;
+}
+input[type="submit"]:hover{
+    background-color: transparent;
+    color: #fc8210;
+}
+.btn.button{
+    color: #ffffff;
+    border: 1px solid #fc8210;
+}
+.btn.button:hover{
+    background-color: #fff;
+    color: #fc8210;
+}
+.progress-wrap {
+    background-color: #fc8210;
+}
+.color-switcher .pallet-button{
+    background-color: #fc8210;
+}
+
+
+@media screen and (max-width: 767px){
+    #main-menu ul li a.active{
+        background-color: transparent;
+        color: #fc8210;
+    }
+    #main-menu ul li a.active i,
+    #main-menu ul li a.active span,
+    .dark #main-menu ul li a.active i,
+    .dark #main-menu ul li a.active span{
+        color: #fc8210;
+    }
+}

@@ -1,0 +1,129 @@
+body.dark,
+html.dark{
+    background-color :#212121 !important;
+    color: #eaeaea;
+}
+.dark .shadow-base,
+.dark .page-link,
+.dark .search-boxes input{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+.dark i{
+    color: #eeeeee;
+}
+.dark .border-bottom{
+    border-bottom: 1px solid #424b5a!important;
+}
+.dark .logo{
+    color: #f1f1f1;
+}
+.dark #main-menu ul li a span{
+    color:#eee;
+}
+
+.dark .bg-light{
+    background-color: #323232 !important;
+}
+.dark .bg-white{
+    background-color: #323232 !important;
+}
+.dark .text-black{
+    color: #f1f1f1 !important;
+}
+.dark .skill-bar .skill-name:after{
+    background-color: #323232;
+}
+.dark .services-box{
+    background-color: #212121;
+}
+.dark .cta a:nth-child(1):hover{
+    background-color: #212121;
+}
+.dark .cta a:nth-child(2) span{
+    color: #eee;
+}
+.dark .btn.button:hover{
+    background-color: #323232;
+}
+.dark a:hover{
+    color: #eee;
+}
+.dark .location-info a{
+    color: #eee;
+}
+.dark .box-text a{
+    color: #f1f1f1;
+}
+.dark .box-overlay{
+    background-color: #323232;
+}
+.dark input[type="submit"]:hover{
+    background-color: #323232;
+}
+.dark input[type="text"],
+.dark textarea,
+.dark input[type="search"]{
+    background-color: #3e3f42;
+    color: #f1f1f1;
+}
+.dark footer p{
+    color: #eee;
+}
+.dark footer a{
+    color: #fff;
+}
+.dark .modal-body{
+    background-color: #212121;
+}
+.dark .blog-single .comment-author h6,
+.dark .modal .comment-author h6{
+    color: #f1f1f1;
+}
+.dark .blog-single .blog-aside-box{
+    background-color: #323232;
+}
+.dark .blog-aside-item a,
+.dark .blog-aside-box a{
+    color: #f1f1f1;
+}
+.dark .blog-tag-cloud a{
+    color: #222;
+}
+.dark #client .client-swiper .swiper-slide img{
+    filter: invert(1);
+}
+
+.dark .progress-wrap svg.progress-circle rect {
+    stroke: #fff;
+    stroke-width: 3;
+}
+.dark .page-link,
+.dark .page-item.disabled .page-link{
+    background-color: #323232;
+    color: #eee;
+}
+.dark #video .video-txt::before {
+    filter: invert(1);
+}
+.dark .color-switcher .color-pallet{
+    background-color: #323232;
+    color: #eee !important;
+}
+.dark .color-scheme li a.dark-scheme:hover i,
+.dark .color-scheme li a.dark-scheme.active i{
+    color: #171717;
+}
+
+@media screen and (max-width: 767px){
+    .dark #main-menu {
+        background-color: #323232;       
+    }
+    .dark #main-menu ul li a span{
+        color: #eee;
+    }
+    .dark .header-fixed #main-menu{
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    }
+}
+    
+    

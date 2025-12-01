@@ -1,0 +1,310 @@
+
+@font-face {
+    font-family: "Vazir-FD-WOL";
+    font-style: normal;
+    font-weight: normal;
+    src: url("../fonts/Vazir-FD-WOL.woff2") format("woff2"), url("../fonts/Vazir-Bold-FD-WOL.woff") format("woff"), url("../fonts/Vazir-FD-WOL.ttf") format("truetype");
+}
+body {
+    text-align: right;
+    direction: rtl;
+    line-height: 1.5;
+    font-family: 'Vazir-FD-WOL', sans-serif;
+}
+p {
+    line-height: 1.5;
+    font-size: 15px;
+}
+h1, h2, h3, h4, h5, h6, .h1 {
+    font-family: 'Vazir-FD-WOL', sans-serif;
+}
+h1 {
+    font-weight: 700;
+}
+.rtl .text-left {
+    text-align: right !important;
+}
+.rtl .mfp-counter {
+    direction: rtl;
+}
+ul {
+    padding-right: 0;
+}
+/******************
+    Style Arrangement
+1- General
+2- Main Menu
+3- Hero
+4- About
+5- Services
+6- Portfolio
+7- Video
+8- Review
+9- Blog
+10- Client
+11 - Contact
+12- 404
+13- Color Pallet
+14- SideNav
+15- Media Screen
+16- Return to top
+
+*******************/
+/****** SECTION ******/
+.section-title:before{
+    right: 0;
+    left: auto;
+}
+/***** Preloader ******/
+
+
+/***********************
+       Main Menu
+************************/
+.top-header{
+    right: 0;
+}
+#main-menu ul li a.active{
+    padding: 10px 0;
+}
+#main-menu .nav-link{
+    padding-bottom: 0;
+}
+.switch-dark i.bi-moon-fill,
+.dark i.bi-brightness-low-fill {
+    line-height: 0;
+}
+
+/**********************
+    Hero Section
+ *********************/
+.cta a:nth-child(2) i{
+    transform: rotate(136deg);
+}
+.cta a:nth-child(2) span:before{
+    right: 0;
+}
+.cta a:nth-child(1){
+    min-width: 210px;
+}
+.cta a:nth-child(2) i::before {
+    transform: rotate(224deg);
+}
+/**********************
+    About Section
+ *********************/
+.skill-bar .skill-chart{
+    top: -22px;
+}
+/*******************
+    Services
+*******************/
+
+/********************
+    Portfolio
+********************/
+.blog-single .blog-aside-item ul li span {
+    margin-right: auto;
+}
+.box-overlay > a{
+    left: 25px;
+    right: auto;
+}
+.box-overlay .box-text{
+    right: 24px;
+    left: 24px;
+}
+/*---------------------
+    Portfolio-Single
+----------------------*/
+.page-header .title-section::after {
+    transform: translateX(50%);
+}
+.single-post-img img{
+    border-radius: 15px 15px 0 0;
+}
+.search-boxes button.btn {
+    left: 0;
+}
+.aside-box .aside-item p::after {
+    right: 0;
+}
+/*---------------------
+    Portfolio-asidebar
+----------------------*/
+
+/*******************
+        Video
+********************/
+#video .video-txt{
+    font-family: "Vazir-FD-WOL";
+}
+#video .video-txt:before {
+    right: 35px;
+}
+/*******************
+    Review Section
+********************/
+.user-info img {
+    margin-left: 12px;
+}
+
+/*******************
+    BLOG Section
+********************/
+
+/* INNER BLOG */
+
+.blog-single .comment-author p,
+.modal .comment-author p{
+    left: 15%;
+    right: auto;
+}
+.blog-single .comment-author h6,
+.modal .comment-author h6{
+    right: 6rem;
+}
+.blog-single .comment-reply-link,
+.modal .comment-reply-link {
+    left: 45px;
+    right: 0;
+    transform: scalex(-1);
+}
+.page-header .title-section::after {
+    transform: translateX(50%) !important;
+}
+.search-boxes input {
+    text-align: left;
+}
+.search-boxes button.btn{
+    padding: 11px 24px;
+}
+.blog-single .blog-search-box button.btn {
+    left: 6px;
+}
+.blog-single .blog-aside-item ul li a{
+    transition: margin-right .3s ease-in-out;
+}
+.blog-single .blog-aside-item ul li:hover a {
+    margin-right: 5px;
+}
+.blog-single .blog-aside-item ul li span {
+    margin-left: 0;
+    margin-right: auto;
+}
+.blog-single .post-content {
+    margin-right:42px;
+}
+
+/*******************
+    Client
+*******************/
+.rate ul{
+    direction: ltr;
+}
+.rate ul li i{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    text-align: center;
+    padding: 4px 0;
+}
+/*****************
+    Contact
+******************/
+
+/***********************
+        404 Error
+***********************/
+
+/*************************
+        SIDENAV STYLE
+**************************/
+#side-menu > i{
+    left: 2rem;
+}
+#side-menu{
+    right: auto;
+}
+#side-menu p {
+    letter-spacing: 1px;
+}
+/*-----------------------
+        theme skin
+-------------------------*/
+.color-switcher .pallet-button a i{
+    line-height: 44px;
+}
+/*********************
+    Return to top
+**********************/
+
+.progress-wrap {
+    left: 50px;
+}
+/******************
+    Media Query
+*******************/
+@media screen and (min-width: 1500px){
+    .copyright-sidebar{
+        right: -9rem;
+    }
+}
+
+@media (max-width: 1599px){
+    .blog-single .comment-author h6 {
+        right: 16%;
+    }
+}
+
+@media (max-width: 1199px){
+    .blog-single .comment-author h6 {
+        right: 18%;
+    }
+}
+
+@media screen and (max-width: 991px){
+/*     BLOG */
+
+/*     portfolio */
+
+}
+
+@media screen and (max-width: 767px) {
+   /* BLOG */
+    .blog-single .comment-author p,
+    .modal .comment-author p{
+        right: 0;
+    }
+    .blog-single .comment-author h6,
+    .modal .comment-author h6{
+        right: 0;
+    }
+    #main-menu ul li a span{
+        white-space: pre-wrap;
+    }
+    #main-menu ul{
+        padding: 18px 0;
+        width: 64px !important
+    }
+    #main-menu ul li a.active{
+        padding: 5px 0;
+    }
+
+}
+@media screen and (max-width: 567px) {
+
+    /* BLOG*/
+    .progress-wrap{
+        left: 13px;
+    }
+
+
+@media (max-width: 480px){
+/*     BLOG */
+
+/*    Portfolio */
+
+}
+
+}
