@@ -1417,6 +1417,7 @@ body.openm::before {
     }
     #hero{
         padding-top: 0;
+        display : none;
     }
     #video .video-txt {
         display: none;
