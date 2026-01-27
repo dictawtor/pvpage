@@ -1,0 +1,113 @@
+/*************** CONFIG ***************/
+const CONFIG = {
+  targetTime: "08:04:00",
+  maxOrders: 3,
+  clickInterval: 40,
+  pingSamples: 5,
+  earlyFactor: 0.9 // تیون: 0.85 تا 0.95
+};
+
+/*************** STATE ***************/
+let serverTimeOffset = 0;
+let ordersSent = 0;
+let plusBtn = null;
+let targetTimestamp = 0;
+let avgPing = 0;
+
+/*************** HIGH RES CLOCK ***************/
+const timeOrigin = performance.timeOrigin;
+const nowMs = () => timeOrigin + performance.now() + serverTimeOffset;
+
+/*************** PING (REAL USE) ***************/
+async function measurePing(samples) {
+  let sum = 0;
+  for (let i = 0; i < samples; i++) {
+    const t0 = performance.now();
+    await fetch(location.href, { method: "HEAD", cache: "no-store" });
+    sum += performance.now() - t0;
+  }
+  return sum / samples;
+}
+
+/*************** TIME SYNC ***************/
+async function syncTime() {
+  const t0 = performance.now();
+  const res = await fetch(location.href, { method: "HEAD", cache: "no-store" });
+  const t1 = performance.now();
+
+  const dateHeader = res.headers.get("Date");
+  if (!dateHeader) throw "NO DATE HEADER";
+
+  const serverMs = new Date(dateHeader).getTime();
+  const rtt = t1 - t0;
+
+  serverTimeOffset = serverMs + rtt / 2 - Date.now();
+  console.log("⏱ server offset:", Math.round(serverTimeOffset), "ms");
+}
+
+/*************** CACHE BUTTON ***************/
+function cacheButton() {
+  plusBtn = document.querySelector("button.btn-success.outlined.fa-plus");
+  if (!plusBtn) {
+    console.error("❌ + button not found");
+    return false;
+  }
+  return true;
+}
+
+/*************** FIRE ***************/
+function fire() {
+  if (!plusBtn || plusBtn.offsetParent === null) return;
+  plusBtn.click();
+  ordersSent++;
+  console.log(`🔥 ${ordersSent} @ ${Math.round(nowMs())}`);
+}
+
+/*************** BARRAGE ***************/
+function startBarrage() {
+  const iv = setInterval(() => {
+    fire();
+    if (ordersSent >= CONFIG.maxOrders) {
+      clearInterval(iv);
+      console.log("✅ mission complete");
+    }
+  }, CONFIG.clickInterval);
+}
+
+/*************** START ***************/
+async function startBot() {
+  console.clear();
+
+  avgPing = await measurePing(CONFIG.pingSamples);
+  console.log("📡 avg ping:", Math.round(avgPing), "ms");
+
+  await syncTime();
+  if (!cacheButton()) return;
+
+  // 🔑 target timestamp با زمان سرور
+  const [h, m, s] = CONFIG.targetTime.split(":").map(Number);
+  const d = new Date(nowMs());
+  d.setHours(h, m, s, 0);
+  targetTimestamp = d.getTime();
+
+  const dynamicOffset = avgPing * CONFIG.earlyFactor;
+
+  console.log(
+    `%cBOT ARMED → ${CONFIG.targetTime}`,
+    "background:#000;color:#0f0;font-size:14px"
+  );
+  console.log("⚡ fire offset:", Math.round(dynamicOffset), "ms");
+
+  // coarse wait
+  function waitForHit() {
+    if (nowMs() >= targetTimestamp - dynamicOffset) {
+      startBarrage();
+    } else {
+      requestAnimationFrame(waitForHit);
+    }
+  }
+
+  waitForHit();
+}
+
+startBot();
